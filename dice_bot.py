@@ -54,12 +54,10 @@ def roll_callback(request):
     :param request: the SlackRequest we receive along with the event. See the README.md for full documentation
     :return: None
     """
+
     fields = []
 
     if "CBGJ4P2JJ" != request.channel:
-        return
-
-    if request.type != "message":
         return
 
     # player message
